@@ -1,6 +1,32 @@
 # Projects
 
-## Birthday Reminder
+## All Projects
 
--   Live Demo: [Link](https://birthday-reminder-47d2c8.netlify.app/)
--   Repository: [Link](https://github.com/VentsiGeorgiev/HTML-CSS/tree/main/Frontend%20Mentor%20Challenges/02.%20NFT%20Card%20Component)
+<table>
+    <thead>
+        <tr>
+            <th >Live Demo</th>
+            <th >Repository </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <a 
+                href="https://birthday-reminder-47d2c8.netlify.app/"
+                target="_blank"
+                >
+                Birthday Reminder
+                </a>
+            </td>
+            <td>
+                <a 
+                href="https://github.com/VentsiGeorgiev/react-tutorial-and-projects/tree/main/projects/bday-reminder"
+                target="_blank"
+                >
+                Link
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
