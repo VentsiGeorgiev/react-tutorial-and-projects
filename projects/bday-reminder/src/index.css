@@ -11,3 +11,91 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(64, 98, 250, 0.253);
+  position: relative;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff; 
+  height: 80vh;
+  width: 80%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 8px;
+}
+
+.image {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.cart { 
+  width: 75%;
+  height: 14vh;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: rgba(221, 221, 221, 0.3);
+  display: flex;
+  align-items: center; 
+  gap: 1rem;
+  padding-left: 15px;
+}
+
+.btn {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding: 10px 18px;
+  border: 1px solid rgba(1, 1, 219, 0.61);
+  background-color: rgba(1, 1, 219, 0.61);
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: rgba(1, 1, 219, 0.61);
+  border: 1px solid rgba(1, 1, 219, 0.61);
+}
+
+.name {
+  color: rgb(1, 73, 73);
+  font-size: 1.2rem;
+}
+
+.age {
+  color: rgba(1, 73, 73, 0.6);
+  font-size: 1.1rem; 
+}
+
+
+@media (min-width: 768px) {
+  .cart {
+    width: 60%;
+  }
+
+  .wrapper {
+    height: 75vh;
+    width: 30%; 
+  }
+
+}
