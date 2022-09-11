@@ -7,7 +7,11 @@ import CounterExample from './tutorial/01-useState/4-counterExample';
 import UseEffectBasics from './tutorial/02-useEffect/1-Basics';
 import UseEffectCleanup from './tutorial/02-useEffect/2-Cleanup';
 import FetchData from './tutorial/02-useEffect/3-FetchData';
-
+// Conditional Rendering
+import MultipleReturns from './tutorial/03-conditional-rendering/1-multiple-returns';
+import MultipleReturnsFetch from './tutorial/03-conditional-rendering/2-multiple-returns-fetch';
+import ShortCircuit from './tutorial/03-conditional-rendering/3-shortcut-evaluation';
+import ShowHideComponent from './tutorial/03-conditional-rendering/4-show-hide-component';
 
 function App() {
   return (
@@ -24,8 +28,12 @@ function App() {
         <ObjectExample />
         <CounterExample />
         <UseEffectBasics />
-        <UseEffectCleanup />*/}
+        <UseEffectCleanup />
         <FetchData />
+        <MultipleReturns />
+        <MultipleReturnsFetch />
+        <ShortCircuit />*/}
+        <ShowHideComponent />
       </section>
     </section>
   );
