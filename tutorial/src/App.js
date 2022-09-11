@@ -12,6 +12,9 @@ import MultipleReturns from './tutorial/03-conditional-rendering/1-multiple-retu
 import MultipleReturnsFetch from './tutorial/03-conditional-rendering/2-multiple-returns-fetch';
 import ShortCircuit from './tutorial/03-conditional-rendering/3-shortcut-evaluation';
 import ShowHideComponent from './tutorial/03-conditional-rendering/4-show-hide-component';
+// Forms
+import ControlledInputs from './tutorial/04-forms/1-controlled-inputs';
+import MultipleInputs from './tutorial/04-forms/2-multiple-inputs';
 
 function App() {
   return (
@@ -32,8 +35,11 @@ function App() {
         <FetchData />
         <MultipleReturns />
         <MultipleReturnsFetch />
-        <ShortCircuit />*/}
+        <ShortCircuit />
         <ShowHideComponent />
+        <FetchData />
+        <ControlledInputs />*/}
+        <MultipleInputs />
       </section>
     </section>
   );

@@ -17,10 +17,22 @@ function UseEffectBasics() {
     //     fetchData();
     // });
 
+    // const fetchData = async () => {
+    //     const res = await fetch(url);
+    //     const result = await res.json();
+    //     setUsers(result);
+    // };
+
+    // useEffect(() => {
+    //     fetchData();
+    // }, []);
+
     const fetchData = async () => {
-        const res = await fetch(url);
-        const result = await res.json();
-        setUsers(result);
+        const response = await fetch('https://api.github.com/users');
+        const data = await response.json();
+        console.log('data = heere');
+        console.log(data);
+        setUsers(data);
     };
 
     useEffect(() => {
