@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { data } from '../../data';
-console.log(data);
 function ArrayExample() {
     // Remove from array
 
