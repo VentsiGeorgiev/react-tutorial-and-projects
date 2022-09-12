@@ -46,5 +46,41 @@
                 </a>
             </td>
         </tr>
+        <tr>
+            <td>
+                <a 
+                href="https://color-generator-850bfe.netlify.app/"
+                target="_blank"
+                >
+                Color Generator
+                </a>
+            </td>
+            <td>
+                <a 
+                href="https://github.com/VentsiGeorgiev/react-tutorial-and-projects/tree/main/projects/color-generator"
+                target="_blank"
+                >
+                Link
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a 
+                href="https://grocery-list-0aa1b1.netlify.app/"
+                target="_blank"
+                >
+                Grocery List
+                </a>
+            </td>
+            <td>
+                <a 
+                href="https://github.com/VentsiGeorgiev/react-tutorial-and-projects/tree/main/projects/grocery-list"
+                target="_blank"
+                >
+                Link
+                </a>
+            </td>
+        </tr>
     </tbody>
 </table>
