@@ -11,3 +11,121 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main { 
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #effbff;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 1.6rem;
+  color: #1d414b;
+}
+
+/* 
+== --------- ==
+=== Buttons ===
+== --------- ==
+*/
+/* # Hamburger */
+.hamburger-button { 
+  position: fixed;
+  top: 2rem;
+  left: 3rem;
+  cursor: pointer;
+}
+
+.hamburger-button .bar{
+  width: 30px;
+  height: 4px;
+  background-color: #3a8397;
+  margin-bottom: 6px;  
+}
+/* # Close */
+.close-btn {
+  cursor: pointer;
+}
+.close-btn div{
+  width: 30px;
+  height: 4px;
+  background-color: #cc1e18;
+  margin-bottom: 6px;  
+}
+
+.close-btn div:nth-child(1){
+  transform: rotate(-45deg) translate(-6px, 0);
+}
+.close-btn div:nth-child(2){
+  transform: rotate(45deg) translate(-6px, 0);
+}
+/* 
+== --------- ==
+=== Sidebar ===
+== --------- ==
+*/
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #d0f4fe; 
+  transform: translate(-100%);
+  transition: all 0.3 linear;
+}
+/* Show Sidebar */
+.show-sidebar { 
+  transform: translate(0);
+}
+.sidebar-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.sidebar-header { 
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.sidebar-nav li:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.sidebar-nav-link {
+  font-size: 1.2rem;
+  color: #1d414b;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    width: 20%;
+  }
+}
+ 
