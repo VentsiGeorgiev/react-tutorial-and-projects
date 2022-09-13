@@ -11,3 +11,111 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* START */
+/* #Header - Nav */
+.header {
+  background-color: rgb(253, 228, 181);
+}
+
+.header-wrapper {
+  width: 80%;
+  margin: 0 auto 10px;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.mob-nav-links {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.1rem; 
+}
+
+.mob-nav-links ul li:not(:last-child){ 
+  margin-bottom: 13px;
+}
+
+
+.mob-nav-links ul li a {
+  color: rgb(134, 87, 0);
+}
+
+ /* HAMBURGER  */
+ /* # hamburger-icon */
+.icon div{
+  height: 3px;
+  width: 20px;
+  background-color: rgb(206, 134, 2);
+  margin-bottom: 4px;
+}
+
+.icon-close div{
+  height: 3px;
+  width: 20px;
+  background-color: rgb(206, 134, 2);
+  margin-bottom: 4px;
+}
+
+.icon-close div:nth-child(2){
+  display: none;
+}
+.icon-close div:nth-child(1){
+  transform: rotate(-45deg) translate(-5px, 0px);
+}
+.icon-close div:nth-child(3){
+  transform: rotate(45deg) translate(-5px, 0px);
+}
+
+.header-links {
+  display: none;
+ }
+
+ .hide {
+  display: none;
+ }
+
+ .show {
+  display: block;
+ }
+
+@media screen and (min-width: 768px){
+   .icon {
+    display: none;
+   }
+   .mob-nav-links {
+    display: none;
+   }
+
+   .header-links {
+    display: block;
+   }
+
+   .header-links ul {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .header-links ul li a {
+     color: rgb(206, 134, 2);
+   }
+}

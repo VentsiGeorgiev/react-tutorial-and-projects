@@ -82,5 +82,23 @@
                 </a>
             </td>
         </tr>
+        <tr>
+            <td>
+                <a 
+                href="https://navbar-ae81ef.netlify.app/"
+                target="_blank"
+                >
+                Navbar
+                </a>
+            </td>
+            <td>
+                <a 
+                href="https://github.com/VentsiGeorgiev/react-tutorial-and-projects/tree/main/projects/navbar"
+                target="_blank"
+                >
+                Link
+                </a>
+            </td>
+        </tr>
     </tbody>
 </table>
