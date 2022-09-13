@@ -15,6 +15,8 @@ import ShowHideComponent from './tutorial/03-conditional-rendering/4-show-hide-c
 // Forms
 import ControlledInputs from './tutorial/04-forms/1-controlled-inputs';
 import MultipleInputs from './tutorial/04-forms/2-multiple-inputs';
+import UseReducerExample from './tutorial/05-useReducer/1-use-reducer-setup';
+// useReducer
 
 function App() {
   return (
@@ -38,8 +40,9 @@ function App() {
         <ShortCircuit />
         <ShowHideComponent />
         <FetchData />
-        <ControlledInputs />*/}
-        <MultipleInputs />
+        <ControlledInputs />
+        <MultipleInputs />*/}
+        <UseReducerExample />
       </section>
     </section>
   );
