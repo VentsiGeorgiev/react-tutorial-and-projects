@@ -1,15 +1,18 @@
 import navLinksData from '../../data/data';
 import styles from './Navbar.module.css';
 import { FiMenu } from 'react-icons/fi';
+import { useGlobalContext } from '../../context/context';
 
 function Navbar() {
+    const { openMobileMenu } = useGlobalContext();
+
     return (
         <header className={`${styles.header} container`}>
             <div>
                 <h1 className={styles.logo}>stripe 2.0</h1>
             </div>
 
-            <div className={styles['mobile-icon-box']}>
+            <div onClick={openMobileMenu} className={styles['mobile-icon-box']}>
                 <FiMenu className={styles['mobile-icon']} />
             </div>
 
