@@ -15,10 +15,13 @@ import ShowHideComponent from './tutorial/03-conditional-rendering/4-show-hide-c
 // Forms
 import ControlledInputs from './tutorial/04-forms/1-controlled-inputs';
 import MultipleInputs from './tutorial/04-forms/2-multiple-inputs';
+// useReducer
 import UseReducerExample from './tutorial/05-useReducer/1-use-reducer-setup';
+// Prop Drilling
 import PropDrilling from './tutorial/06-prop-drilling/1-prop-drilling';
 import Parent from './tutorial/06-prop-drilling/2-child-to-parent-data';
-// useReducer
+// ContextAPI
+import ContextAPI from './tutorial/07-useContext/1-useContext';
 
 function App() {
   return (
@@ -45,8 +48,9 @@ function App() {
         <ControlledInputs />
         <MultipleInputs />
         <UseReducerExample />
-        <PropDrilling />*/}
-        <Parent />
+        <PropDrilling />
+        <Parent />*/}
+        <ContextAPI />
       </section>
     </section>
   );

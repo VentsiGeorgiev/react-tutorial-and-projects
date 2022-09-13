@@ -4,7 +4,8 @@ import { data } from '../../data';
 function PropDrilling() {
     const [people, setPeople] = useState(data);
 
-    // # removePerson function  -> ListOfPeople ->  SignlePerson ->
+    // # removePerson function  -> ListOfPeople ->  SignlePerson -> 
+    // # fix - check 07-useContext/1-useContext.js
 
     const removePerson = (id) => {
         setPeople((prevState) => (
