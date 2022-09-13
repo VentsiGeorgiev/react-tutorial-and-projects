@@ -100,5 +100,23 @@
                 </a>
             </td>
         </tr>
+        <tr>
+            <td>
+                <a 
+                href="https://sidebar-aeea7d.netlify.app/"
+                target="_blank"
+                >
+                Sidebar
+                </a>
+            </td>
+            <td>
+                <a 
+                href="https://github.com/VentsiGeorgiev/react-tutorial-and-projects/tree/main/projects/sidebar"
+                target="_blank"
+                >
+                Link
+                </a>
+            </td>
+        </tr>
     </tbody>
 </table>
