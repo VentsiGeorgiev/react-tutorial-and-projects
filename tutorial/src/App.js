@@ -16,6 +16,8 @@ import ShowHideComponent from './tutorial/03-conditional-rendering/4-show-hide-c
 import ControlledInputs from './tutorial/04-forms/1-controlled-inputs';
 import MultipleInputs from './tutorial/04-forms/2-multiple-inputs';
 import UseReducerExample from './tutorial/05-useReducer/1-use-reducer-setup';
+import PropDrilling from './tutorial/06-prop-drilling/1-prop-drilling';
+import Parent from './tutorial/06-prop-drilling/2-child-to-parent-data';
 // useReducer
 
 function App() {
@@ -41,8 +43,10 @@ function App() {
         <ShowHideComponent />
         <FetchData />
         <ControlledInputs />
-        <MultipleInputs />*/}
+        <MultipleInputs />
         <UseReducerExample />
+        <PropDrilling />*/}
+        <Parent />
       </section>
     </section>
   );
