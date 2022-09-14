@@ -1,3 +1,4 @@
+import Hero from './components/Hero/Hero';
 import MobileMenu from './components/MobileMenu/MobileMenu';
 import Navbar from './components/Navbar/Navbar';
 
@@ -6,6 +7,7 @@ function App() {
     <>
       <Navbar />
       <MobileMenu />
+      <Hero />
     </>
   );
 }

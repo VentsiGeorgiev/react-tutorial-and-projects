@@ -1,0 +1,158 @@
+.hero {
+    width: 100%;
+    height: 80vh;
+    background: #324747;
+    animation: color 30s infinite linear;
+    padding: 2em;
+    position: relative;
+    margin-top: -45%;
+    z-index: -2;
+    transform: rotate(-10deg);
+    transform: skewY(-11deg);
+}
+
+.hero-center {
+    display: flex;
+    width: 80%;
+}
+
+.hero-wrapper {
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+    width: 80%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-title {
+    font-size: 2.2rem;
+    line-height: 3rem;
+    color: #3a3a3a;
+    margin-bottom: 3rem;
+}
+
+.hero-text {
+    font-size: 1.5rem;
+    line-height: 1.4rem;
+    color: #425466;
+}
+
+.hero-image {
+    display: none;
+}
+
+.button-wrapper {
+    width: 100%;
+}
+.button-wrapper button {
+    margin-top: 2rem;
+    margin-right: 12px;
+}
+
+.btn-start {
+    font-size: 1rem;
+    border: none;
+    background-color: #0a2540;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.btn-sales {
+    font-size: 1rem;
+    background-color: transparent;
+    color: #0a2540;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        margin-top: -35%;
+    }
+
+    .hero-wrapper {
+        margin-top: 5%;
+    }
+
+    .hero-image {
+        display: unset;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .hero {
+        margin-top: -15%;
+    }
+
+    .hero-wrapper {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .hero {
+        margin-top: -15%;
+    }
+}
+
+@keyframes color {
+    0% {
+        background: #ba2ec707;
+    }
+    5% {
+        background: #ba2ec770;
+    }
+    10% {
+        background: #ba2ec7ad;
+    }
+    15% {
+        background: #ba2ec7;
+    }
+    20% {
+        background: #96abfa;
+    }
+    30% {
+        background: #96acfac0;
+    }
+    40% {
+        background: #90e0ff;
+    }
+    50% {
+        background: #90e0ffb0;
+    }
+    60% {
+        background: #c8949d;
+    }
+    80% {
+        background: #ff323d;
+    }
+    90% {
+        background: #febb57d2;
+    }
+    92% {
+        background: #febb57a6;
+    }
+    94% {
+        background: #febb578c;
+    }
+    96% {
+        background: #febb5780;
+    }
+    98% {
+        background: #febb5746;
+    }
+    100% {
+        background: #febb5723;
+    }
+}
+
+.colors {
+    color: #ba2ec7;
+    color: #96abfa;
+    color: #90e0ff;
+    color: #c8949d;
+    color: #ff323d;
+    color: #feba57;
+}
