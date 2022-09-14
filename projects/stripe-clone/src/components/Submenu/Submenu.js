@@ -7,7 +7,7 @@ function Submenu() {
 
     return (
         <>
-            {isSubmenuOpen ? <h3>True</h3> : <h3>False</h3>}
+            {/* {isSubmenuOpen ? <h3>True</h3> : <h3>False</h3>} */}
         </>
     );
 }
