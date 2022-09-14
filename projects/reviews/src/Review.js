@@ -8,29 +8,50 @@ function Review() {
     const [index, setIndex] = useState(0);
     const { name, image, job, text } = reviews[index];
 
-    const checkNumber = (number) => {
-        if (number > reviews.length - 1) {
-            return 0;
+    const prevPerson = () => {
+        if (index <= 0) {
+            setIndex(reviews.length - 1);
+        } else {
+            setIndex((prevState) => {
+                return prevState--;
+            });
         }
-        if (number < 0) {
-            return reviews.length - 1;
-        }
-        return number;
     };
 
     const nextPerson = () => {
-        setIndex((index) => {
-            index++;
-            return checkNumber(index);
-        });
+        if (index >= reviews.length - 1) {
+            setIndex(0);
+        } else {
+            setIndex((prevState) => {
+                return prevState++;
+            });
+        }
     };
 
-    const prevPerson = () => {
-        setIndex((index) => {
-            index--;
-            return checkNumber(index);
-        });
-    };
+
+    // const checkNumber = (number) => {
+    //     if (number > reviews.length - 1) {
+    //         return 0;
+    //     }
+    //     if (number < 0) {
+    //         return reviews.length - 1;
+    //     }
+    //     return number;
+    // };
+
+    // const nextPerson = () => {
+    //     setIndex((index) => {
+    //         index++;
+    //         return checkNumber(index);
+    //     });
+    // };
+
+    // const prevPerson = () => {
+    //     setIndex((index) => {
+    //         index--;
+    //         return checkNumber(index);
+    //     });
+    // };
 
 
     return (
@@ -45,6 +66,10 @@ function Review() {
                     <p className='positon'>{job}</p>
                     <p className='text'>{text}</p>
                 </div>
+                {/* <div className='buttons'>
+                    <FaAngleLeft onClick={prevPerson} className='icon' />
+                    <FaAngleRight onClick={nextPerson} className='icon' />
+                </div> */}
                 <div className='buttons'>
                     <FaAngleLeft onClick={prevPerson} className='icon' />
                     <FaAngleRight onClick={nextPerson} className='icon' />
