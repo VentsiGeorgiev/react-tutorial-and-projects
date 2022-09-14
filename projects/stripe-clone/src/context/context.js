@@ -8,6 +8,7 @@ const AppContext = createContext();
 const AppProvider = ({ children }) => {
 
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
 
     const openMobileMenu = () => {
         setIsMobileMenuOpen(true);
@@ -16,13 +17,23 @@ const AppProvider = ({ children }) => {
     const closeMobileMenu = () => {
         setIsMobileMenuOpen(false);
     };
+    const openSubmenu = () => {
+        setIsSubmenuOpen(true);
+    };
+
+    const closeSubmenu = () => {
+        setIsSubmenuOpen(false);
+    };
 
     return (
         <AppContext.Provider
             value={{
                 isMobileMenuOpen,
                 openMobileMenu,
-                closeMobileMenu
+                closeMobileMenu,
+                isSubmenuOpen,
+                openSubmenu,
+                closeSubmenu,
             }}
         >
             {children}

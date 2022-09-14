@@ -4,7 +4,12 @@ import { FiMenu } from 'react-icons/fi';
 import { useGlobalContext } from '../../context/context';
 
 function Navbar() {
-    const { openMobileMenu } = useGlobalContext();
+    const { openMobileMenu, openSubmenu } = useGlobalContext();
+
+    const displaySubmenu = (e) => {
+        console.log('here');
+        openSubmenu();
+    };
 
     return (
         <header className={`${styles.header} container`}>
@@ -22,7 +27,13 @@ function Navbar() {
                 <ul>
                     {navLinksData.map((data, index) => (
                         <li key={index}>
-                            <a className={styles['nav-links']} href={data.pageUrl}>{data.page}</a>
+                            <a
+                                onMouseOver={displaySubmenu}
+                                className={styles['nav-links']}
+                                href={data.pageUrl}
+                            >
+                                {data.page}
+                            </a>
                         </li>
                     ))}
                 </ul>
@@ -31,7 +42,7 @@ function Navbar() {
             <div className={styles['sign-in']}>
                 <button className={`btn ${styles['btn-sign-in']}`}>Sign in</button>
             </div>
-        </header>
+        </header >
     );
 }
 
