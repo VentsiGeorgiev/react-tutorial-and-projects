@@ -1,6 +1,16 @@
+import Questions from './Questions';
+import { data } from './data';
+
 function App() {
   return (
-    <h1>My App</h1>
+    <main>
+      <section className='q-a'>
+        <h1 className='title'>Thinking in React</h1>
+        {data.map((qa, index) => {
+          return <Questions key={index} qa={qa} />;
+        })}
+      </section>
+    </main>
   );
 }
 
