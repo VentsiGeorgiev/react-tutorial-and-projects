@@ -1,0 +1,44 @@
+.mob-menu {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid orange;
+}
+
+.bnt-close {
+    position: absolute;
+    right: 1.4rem;
+    top: 0.8rem;
+    color: #8898aa;
+    background-color: transparent;
+}
+.page-link-li {
+    margin-bottom: 14px;
+}
+
+.page-link {
+    color: #78849a;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.links-wrapper::before {
+    height: 100px;
+    width: 5px;
+    background-color: orange;
+}
+
+.links-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 26px;
+}
+
+.page-sub-link {
+    color: #0a2540;
+}
