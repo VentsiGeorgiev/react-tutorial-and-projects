@@ -30,7 +30,7 @@ main {
 
 .title {
     font-size: 2rem;
-    color: rgb(211, 116, 0);
+    color: rgb(87, 48, 0);
     margin-bottom: 10px;
 }
 
@@ -38,6 +38,7 @@ main {
     width: 90%;
     margin: 0 auto;
     display: grid;
+    gap: 1rem;
 }
 
 .image {
@@ -59,6 +60,18 @@ main {
     display: inline-block;
     margin-right: 10px;
     color: rgb(150, 82, 0);
+}
+
+.btn-menu {
+    border: 1px solid rgb(211, 116, 0);
+    background-color: transparent;
+    color: rgb(211, 116, 0);
+    padding: 6px;
+    margin: 6px 10px 30px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
 @media screen and (min-width: 678px) {

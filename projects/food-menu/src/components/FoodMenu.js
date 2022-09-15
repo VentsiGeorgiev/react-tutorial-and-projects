@@ -1,10 +1,11 @@
 function FoodMenu({ foodItems }) {
     return (
         <section className="food-menu">
-            {foodItems.map((item, index) => {
-                const { name, price, image, description } = item;
+
+            {foodItems.map((item) => {
+                const { id, name, price, image, description } = item;
                 return (
-                    <article key={index} className="food-card">
+                    <article key={id} className="food-card">
                         <header>
                             <img className="image" src={image} alt={name} />
                         </header>

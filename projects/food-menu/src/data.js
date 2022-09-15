@@ -47,12 +47,5 @@ export const data = [
         image: './images/dinner-2.jpg',
         description: 'Hic labore, eos non placeat cupiditate quo voluptatum ab, minus expedita fuga rerum dolorem est, reprehenderit aliquid! Ipsa tempore officiis ullam quis!'
     },
-    {
-        id: 6,
-        category: 'dinner',
-        name: 'Tex-Mex',
-        price: 18.99,
-        image: './images/dinner-2.jpg',
-        description: 'Hic labore, eos non placeat cupiditate quo voluptatum ab, minus expedita fuga rerum dolorem est, reprehenderit aliquid! Ipsa tempore officiis ullam quis!'
-    },
+
 ];
