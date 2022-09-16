@@ -89,10 +89,6 @@ COCKTAILS
     width: 60%;
 }
 
-.cocktail-info {
-    padding: 12px;
-}
-
 @media screen and (min-width: 768px) {
     .cocktail-image {
         width: 200px;
@@ -137,4 +133,51 @@ SEARCH
     border: none;
     color: #171717;
     padding: 8px;
+}
+
+/* 
+===============
+ABOUT
+===============
+*/
+
+.about {
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 2rem;
+}
+
+/* 
+===============
+COCKTAIL-DETAILS
+===============
+*/
+
+.cocktail-details {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.details-image {
+    height: 40vh;
+    object-fit: contain;
+    margin-bottom: 2rem;
+}
+
+.cocktail-details span {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 3px;
+}
+.cocktail-details p {
+    margin-bottom: 10px;
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

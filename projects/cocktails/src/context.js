@@ -12,11 +12,10 @@ const AppProvider = ({ children }) => {
 
     useEffect(() => {
         const fetchData = async () => {
+            console.log('here');
             try {
                 const res = await fetch(`${url}${searchTerm}`);
                 const result = await res.json();
-                console.log('result');
-                console.log(result);
 
                 if (result.drinks) {
                     const newCocktails = result.drinks.map((cocktail) => {
@@ -48,7 +47,6 @@ const AppProvider = ({ children }) => {
         };
         fetchData();
     }, [searchTerm]);
-
 
 
     return (

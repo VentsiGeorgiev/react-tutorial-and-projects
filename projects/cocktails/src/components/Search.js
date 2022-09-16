@@ -15,7 +15,6 @@ function Search() {
     };
 
     const searchCocktail = () => {
-        console.log('here');
         setSearchTerm(searchValue.current.value);
     };
 
