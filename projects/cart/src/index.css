@@ -137,11 +137,27 @@ nav {
 
 .cart-total {
     text-align: right;
+    margin-bottom: 2rem;
 }
 .cart-total p {
     font-size: 1.1rem;
     color: rgb(60, 68, 77);
     font-weight: bold;
+}
+
+.btn-center {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn-clear {
+    font-size: 1.2rem;
+}
+
+.cart-subtitle {
+    text-align: center;
+    color: rgb(60, 68, 77);
 }
 
 @media screen and (min-width: 786px) {

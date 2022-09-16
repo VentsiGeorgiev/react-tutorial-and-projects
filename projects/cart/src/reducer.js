@@ -39,6 +39,12 @@ function reducer(state, action) {
 
         return { ...state, total, amount };
     }
+
+    if (action.type === 'CLEAR_CART') {
+        return {
+            ...state, cart: []
+        };
+    }
 };
 
 export default reducer;

@@ -33,6 +33,10 @@ const AppProvider = ({ children }) => {
         dispatch({ type: 'GET_TOTAL' });
     }, [state.cart]);
 
+    const clearCart = (id) => {
+        dispatch({ type: 'CLEAR_CART' });
+    };
+
 
     return <AppContext.Provider
         value={{
@@ -40,6 +44,7 @@ const AppProvider = ({ children }) => {
             removeItem,
             increaseAmount,
             decreaseAmount,
+            clearCart,
         }}
     >
         {children}
