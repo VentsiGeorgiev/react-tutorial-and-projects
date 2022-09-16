@@ -86,10 +86,11 @@ COCKTAILS
     border: 1px solid var(--white);
     border-radius: 12px;
     overflow: hidden;
+    width: 60%;
 }
 
 .cocktail-info {
-    padding: 8px;
+    padding: 12px;
 }
 
 @media screen and (min-width: 768px) {
@@ -111,4 +112,29 @@ COCKTAILS
         grid-template-columns: repeat(4, 1fr);
         gap: 3rem;
     }
+}
+
+/* 
+===============
+SEARCH
+===============
+*/
+
+.search {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form {
+    margin-bottom: 2rem;
+}
+
+.form-input {
+    width: 60%;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: none;
+    color: #171717;
+    padding: 8px;
 }

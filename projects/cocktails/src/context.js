@@ -5,16 +5,15 @@ const url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=';
 const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
+
     const [isLoading, setIsLoading] = useState(true);
     const [searchTerm, setSearchTerm] = useState('a');
     const [cocktails, setCocktails] = useState([]);
 
-
-
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await fetch(url);
+                const res = await fetch(`${url}${searchTerm}`);
                 const result = await res.json();
                 console.log('result');
                 console.log(result);
@@ -48,14 +47,15 @@ const AppProvider = ({ children }) => {
             }
         };
         fetchData();
-    }, []);
+    }, [searchTerm]);
 
 
 
     return (
         <AppContext.Provider value={{
             isLoading,
-            cocktails
+            cocktails,
+            setSearchTerm,
         }}
         >
             {children}
