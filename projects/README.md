@@ -208,5 +208,23 @@
                 </a>
             </td>
         </tr>
+        <tr>
+            <td>
+                <a 
+                href="https://car-d2843f.netlify.app/"
+                target="_blank"
+                >
+                Slider
+                </a>
+            </td>
+            <td>
+                <a 
+                href="https://github.com/VentsiGeorgiev/react-tutorial-and-projects/tree/main/projects/cart"
+                target="_blank"
+                >
+                Link
+                </a>
+            </td>
+        </tr>
     </tbody>
 </table>
