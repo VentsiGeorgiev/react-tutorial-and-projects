@@ -160,7 +160,7 @@
                 href="https://qa-a93225.netlify.app/"
                 target="_blank"
                 >
-                Reviews
+                Q&A
                 </a>
             </td>
             <td>
@@ -214,12 +214,30 @@
                 href="https://car-d2843f.netlify.app/"
                 target="_blank"
                 >
-                Slider
+                Cart
                 </a>
             </td>
             <td>
                 <a 
                 href="https://github.com/VentsiGeorgiev/react-tutorial-and-projects/tree/main/projects/cart"
+                target="_blank"
+                >
+                Link
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a 
+                href="https://cocktails-ca2c4d.netlify.app/"
+                target="_blank"
+                >
+                Cocktails
+                </a>
+            </td>
+            <td>
+                <a 
+                href="https://github.com/VentsiGeorgiev/react-tutorial-and-projects/tree/main/projects/cocktails"
                 target="_blank"
                 >
                 Link
