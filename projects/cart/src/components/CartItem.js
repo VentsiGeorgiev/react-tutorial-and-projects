@@ -3,7 +3,7 @@ import { useGlobalContext } from '../context';
 
 function CartItem({ item }) {
     const { id, title, price, amount, img } = item;
-    const { removeItem } = useGlobalContext();
+    const { removeItem, increaseAmount, decreaseAmount } = useGlobalContext();
     return (
         <div className="product" >
             <img className='product-img' src={img} alt='phone' />
@@ -18,9 +18,15 @@ function CartItem({ item }) {
                 </button>
             </div>
             <div className="quantity">
-                <FaArrowAltCircleUp className='product-icon' />
+                <FaArrowAltCircleUp
+                    onClick={() => increaseAmount(id)}
+                    className='product-icon'
+                />
                 <p className='count'>{amount}</p>
-                <FaArrowAltCircleDown className='product-icon' />
+                <FaArrowAltCircleDown
+                    className='product-icon'
+                    onClick={() => decreaseAmount(id)}
+                />
             </div>
         </div>
     );
