@@ -13,8 +13,8 @@ code {
 }
 
 :root {
-    --black: #868686;
-    /* --black: #171717; */
+    /* --black: #868686; */
+    --black: #171717;
     --white: #fdfbf9;
 }
 
@@ -59,4 +59,56 @@ HEADER
 .menu-nav {
     display: flex;
     gap: 1rem;
+}
+
+/* 
+===============
+COCKTAILS
+===============
+*/
+
+.cockitals {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.cocktail-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.cocktail {
+    border: 1px solid var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.cocktail-info {
+    padding: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .cocktail-image {
+        width: 200px;
+        height: 200px;
+    }
+    .cockitals {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cocktail-image {
+        width: 250px;
+        height: 250px;
+    }
+    .cockitals {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+    }
 }

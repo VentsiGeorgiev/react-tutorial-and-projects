@@ -1,6 +1,10 @@
+import CocktailList from '../components/CocktailList';
+
 function Home() {
     return (
-        <div>Home</div>
+        <>
+            <CocktailList />
+        </>
     );
 }
 
