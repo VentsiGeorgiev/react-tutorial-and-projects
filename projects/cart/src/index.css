@@ -84,6 +84,7 @@ nav {
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr;
+    margin-bottom: 2rem;
 }
 
 .product {
@@ -132,6 +133,15 @@ nav {
     color: #fff;
     margin-top: 8px;
     cursor: pointer;
+}
+
+.cart-total {
+    text-align: right;
+}
+.cart-total p {
+    font-size: 1.1rem;
+    color: rgb(60, 68, 77);
+    font-weight: bold;
 }
 
 @media screen and (min-width: 786px) {

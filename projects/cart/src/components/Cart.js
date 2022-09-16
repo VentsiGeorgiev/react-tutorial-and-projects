@@ -2,7 +2,7 @@ import { useGlobalContext } from '../context';
 import CartItem from './CartItem';
 
 function Cart() {
-    const { cart } = useGlobalContext();
+    const { cart, total } = useGlobalContext();
     return (
         <>
             <section className="cart-section">
@@ -13,7 +13,13 @@ function Cart() {
                         return <CartItem key={item.id} item={item} />;
                     })}
                 </div>
+
+                <div className='cart-total'>
+                    <p>Total: ${total}</p>
+                </div>
+
             </section>
+
         </>
     );
 }
