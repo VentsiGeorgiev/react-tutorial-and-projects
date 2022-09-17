@@ -279,6 +279,24 @@
                 </a>
             </td>
             </tr>
+            <tr>
+            <td>
+                <a 
+                href="https://pagination-5a3c2b.netlify.app/"
+                target="_blank"
+                >
+                Pagination
+                </a>
+            </td>
+            <td>
+                <a 
+                href="https://github.com/VentsiGeorgiev/react-tutorial-and-projects/tree/main/projects/pagination"
+                target="_blank"
+                >
+                Link
+                </a>
+            </td>
+            </tr>
         </tr>
     </tbody>
 </table>
