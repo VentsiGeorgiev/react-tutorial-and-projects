@@ -1,9 +1,9 @@
-import UserList from './components/UserList';
+import Followers from './components/Followers';
 
 function App() {
   return (
     <>
-      <UserList />
+      <Followers />
     </>
   );
 }

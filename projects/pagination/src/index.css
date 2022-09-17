@@ -1,13 +1,186 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+        "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 112);
+}
+
+.section {
+    background-color: rgb(177, 220, 235);
+    min-height: 100vh;
+    width: 100%;
+}
+
+.followers {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto 3rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.follower-img {
+    width: 120px;
+    height: 120px;
+}
+
+.follower {
+    background-color: rgba(135, 206, 250, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.follower-info {
+    padding: 8px;
+    height: 15vh;
+}
+
+.follower-info h3 {
+    margin-bottom: 1rem;
+}
+
+.link {
+    border: 1px solid rgb(0, 0, 112);
+    padding: 2px 12px;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.link:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.btn {
+    border: none;
+    font-size: 1.2rem;
+    padding: 6px;
+    margin-left: 6px;
+    cursor: pointer;
+    background-color: #fff;
+    color: rgb(0, 0, 112);
+}
+
+.btn:hover {
+    background-color: rgb(0, 0, 112);
+    color: #fff;
+}
+
+.btn-prev {
+    margin-right: 2rem;
+}
+.btn-next {
+    margin-left: 2rem;
+}
+
+.active {
+    background-color: rgb(0, 0, 112);
+    color: #fff;
+}
+
+.followers-title {
+    text-align: center;
+    padding: 2rem 0;
+    color: rgb(0, 0, 112);
+}
+
+@media screen and (min-width: 640px) {
+    .followers {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    .follower-img {
+        width: 150px;
+        height: 150px;
+    }
+    .follower-info {
+        height: 10vh;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .followers {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+    }
+    .follower-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .follower-info {
+        height: 10vh;
+    }
+}
+
+/* SPINNER */
+
+.center {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.lds-facebook {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    background: rgb(0, 0, 112);
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+}
+@keyframes lds-facebook {
+    0% {
+        top: 8px;
+        height: 64px;
+    }
+    50%,
+    100% {
+        top: 24px;
+        height: 32px;
+    }
 }
