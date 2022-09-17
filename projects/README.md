@@ -261,6 +261,7 @@
                 Link
                 </a>
             </td>
+            <tr>
             <td>
                 <a 
                 href="https://random-user-60ca3c.netlify.app/"
@@ -277,6 +278,7 @@
                 Link
                 </a>
             </td>
+            </tr>
         </tr>
     </tbody>
 </table>
