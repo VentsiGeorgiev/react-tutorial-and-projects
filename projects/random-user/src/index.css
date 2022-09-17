@@ -30,11 +30,88 @@ section {
 }
 
 .person {
+    width: 80%;
+    max-width: 680px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: orange;
-    width: 50%;
+    background: #fff;
     margin: 0 auto;
+}
+
+.person header {
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.person-image {
+    position: relative;
+    top: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 5px;
+    border: 1px solid #2c2e31;
+    background-color: #fff;
+    margin-bottom: 1rem;
+}
+
+.person-info {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem;
+}
+
+.person-data {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.title {
+    color: #a7a7a7;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+.value {
+    color: #2c2e31;
+    font-size: 1.4rem;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+}
+
+.icon {
+    color: #d9d9d9;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: #83ba43;
+}
+
+.btn-random {
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 8px;
+    color: #2c2e31;
+    cursor: pointer;
+}
+
+.btn-random:hover {
+    border: 1px solid #2c2e31;
+    color: #2c2e31;
 }
