@@ -261,6 +261,22 @@
                 Link
                 </a>
             </td>
+            <td>
+                <a 
+                href="https://random-user-60ca3c.netlify.app/"
+                target="_blank"
+                >
+                Random User
+                </a>
+            </td>
+            <td>
+                <a 
+                href="https://github.com/VentsiGeorgiev/react-tutorial-and-projects/tree/main/projects/random-user"
+                target="_blank"
+                >
+                Link
+                </a>
+            </td>
         </tr>
     </tbody>
 </table>

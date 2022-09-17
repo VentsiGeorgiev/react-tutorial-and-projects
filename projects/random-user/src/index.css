@@ -115,3 +115,10 @@ section {
     border: 1px solid #2c2e31;
     color: #2c2e31;
 }
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
