@@ -315,6 +315,24 @@
                 </a>
             </td>
             </tr>
+            <tr>
+            <td>
+                <a 
+                href="https://stock-photos-68d44d.netlify.app/"
+                target="_blank"
+                >
+                Stock Photos
+                </a>
+            </td>
+            <td>
+                <a 
+                href="https://github.com/VentsiGeorgiev/react-tutorial-and-projects/tree/main/projects/stock-photos"
+                target="_blank"
+                >
+                Link
+                </a>
+            </td>
+            </tr>
         </tr>
     </tbody>
 </table>
