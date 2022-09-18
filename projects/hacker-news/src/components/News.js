@@ -1,7 +1,7 @@
 import { useGlobalContext } from '../context';
 
 function News() {
-    const { isLoading } = useGlobalContext();
+    const { isLoading, news } = useGlobalContext();
 
     if (isLoading) {
         return <h3>Loading...</h3>;
@@ -9,7 +9,9 @@ function News() {
 
     return (
         <div>
-            <h1>News</h1>
+            {news.map((n) => {
+                return <h4 key={n.objectID}>{n.title}</h4>;
+            })}
         </div>
     );
 }
