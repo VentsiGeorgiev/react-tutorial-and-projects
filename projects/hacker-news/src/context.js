@@ -3,6 +3,7 @@ import reducer from './reducer';
 import {
     SET_LOADING,
     SET_NEWS,
+    SET_QUERY,
 } from './actions';
 
 const AppContext = createContext();
@@ -30,6 +31,10 @@ const AppProvider = ({ children }) => {
 
     };
 
+    const handleSearch = (query) => {
+        dispatch({ type: SET_QUERY, payload: query });
+    };
+
     useEffect(() => {
         fetchData(`${API_ENDPOINT}${state.query}`);
     }, [state.query]);
@@ -37,6 +42,7 @@ const AppProvider = ({ children }) => {
     return <AppContext.Provider
         value={{
             ...state,
+            handleSearch,
         }}
     >
         {children}

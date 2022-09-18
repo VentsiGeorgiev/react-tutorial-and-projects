@@ -1,6 +1,7 @@
 import {
     SET_LOADING,
     SET_NEWS,
+    SET_QUERY,
 } from './actions';
 
 function reducer(state, action) {
@@ -17,6 +18,12 @@ function reducer(state, action) {
                 isLoading: false,
                 news: action.payload,
             };
+        case SET_QUERY:
+            return {
+                ...state,
+                query: action.payload
+            };
+
         default:
             throw new Error(`No Matching ${action.type} Action Type`);
     }
