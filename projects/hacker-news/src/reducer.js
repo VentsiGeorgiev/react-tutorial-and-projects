@@ -29,14 +29,14 @@ function reducer(state, action) {
             };
         case HANDLE_PAGE:
             if (action.payload === 'next') {
-                let nextPage = state.page++;
+                let nextPage = state.page + 1;
                 if (nextPage > state.nbPages - 1) {
                     nextPage = 0;
                 }
                 return { ...state, page: nextPage };
             }
             if (action.payload === 'prev') {
-                let prevPage = state.page--;
+                let prevPage = state.page - 1;
                 if (prevPage < 0) {
                     prevPage = state.nbPages - 1;
                 }

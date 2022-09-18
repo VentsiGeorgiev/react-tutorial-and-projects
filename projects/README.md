@@ -333,6 +333,24 @@
                 </a>
             </td>
             </tr>
+            <tr>
+            <td>
+                <a 
+                href="https://hacker-news-6e7649.netlify.app/"
+                target="_blank"
+                >
+                Hacker News
+                </a>
+            </td>
+            <td>
+                <a 
+                href="https://github.com/VentsiGeorgiev/react-tutorial-and-projects/tree/main/projects/hacker-news"
+                target="_blank"
+                >
+                Link
+                </a>
+            </td>
+            </tr>
         </tr>
     </tbody>
 </table>
