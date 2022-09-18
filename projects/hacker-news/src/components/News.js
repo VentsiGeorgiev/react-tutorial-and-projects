@@ -1,11 +1,15 @@
 import { useGlobalContext } from '../context';
 
 function News() {
-    const { message } = useGlobalContext();
-    return (
+    const { isLoading } = useGlobalContext();
 
+    if (isLoading) {
+        return <h3>Loading...</h3>;
+    }
+
+    return (
         <div>
-            <h3>{message}</h3>
+            <h1>News</h1>
         </div>
     );
 }

@@ -1,11 +1,31 @@
-import { createContext, useContext } from 'react';
+import { createContext, useContext, useEffect, useReducer } from 'react';
+import reducer from './reducer';
+import {
+    SET_LOADING,
+} from './actions';
 
 const AppContext = createContext();
 
+const initialState = {
+    isLoading: true,
+};
+
 const AppProvider = ({ children }) => {
+    const [state, dispatch] = useReducer(reducer, initialState);
+
+    const fetchData = () => {
+        dispatch({ type: SET_LOADING });
+
+    };
+
+    useEffect(() => {
+        fetchData();
+    }, []);
 
     return <AppContext.Provider
-        value={{ message: 'hello from context' }}
+        value={{
+            ...state,
+        }}
     >
         {children}
     </AppContext.Provider>;
