@@ -8,7 +8,7 @@ function reducer(state, action) {
     if (action.type === 'INCREMENT_AMOUNT') {
         let tempCart = state.cart.map((cartItem) => {
             if (cartItem.id === action.payload) {
-                return { ...cartItem, amount: cartItem.amount++ };
+                return { ...cartItem, amount: cartItem.amount + 1 };
             }
             return cartItem;
         });
@@ -18,7 +18,7 @@ function reducer(state, action) {
         let tempCart = state.cart
             .map((cartItem) => {
                 if (cartItem.id === action.payload) {
-                    return { ...cartItem, amount: cartItem.amount-- };
+                    return { ...cartItem, amount: cartItem.amount - 1 };
                 }
                 return cartItem;
             })

@@ -211,7 +211,7 @@
         <tr>
             <td>
                 <a 
-                href="https://car-d2843f.netlify.app/"
+                href="https://cart-6a0c40.netlify.app/"
                 target="_blank"
                 >
                 Cart
