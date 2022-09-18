@@ -5,6 +5,7 @@ import {
     SET_NEWS,
     SET_QUERY,
     HANDLE_PAGE,
+    REMOVE_ARTICLE,
 } from './actions';
 
 const AppContext = createContext();
@@ -49,6 +50,10 @@ const AppProvider = ({ children }) => {
         dispatch({ type: HANDLE_PAGE, payload: value });
     };
 
+    const removeArticle = (id) => {
+        dispatch({ type: REMOVE_ARTICLE, payload: id });
+    };
+
     useEffect(() => {
         fetchData(`${API_ENDPOINT}${state.query}&page=${state.page}`);
     }, [state.query, state.page]);
@@ -58,6 +63,7 @@ const AppProvider = ({ children }) => {
             ...state,
             handleSearch,
             handlePage,
+            removeArticle,
         }}
     >
         {children}

@@ -1,5 +1,6 @@
 import {
     HANDLE_PAGE,
+    REMOVE_ARTICLE,
     SET_LOADING,
     SET_NEWS,
     SET_QUERY,
@@ -44,6 +45,11 @@ function reducer(state, action) {
             return {
                 ...state,
                 query: action.payload
+            };
+        case REMOVE_ARTICLE:
+            return {
+                ...state,
+                news: state.news.filter((x) => x.objectID !== action.payload)
             };
 
         default:
