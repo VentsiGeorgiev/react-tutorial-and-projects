@@ -1,12 +1,12 @@
 import { useGlobalContext } from '../context';
 
 function Buttons() {
-    const { page, nbPages, handlePage } = useGlobalContext();
+    const { page, nbPages, handlePage, isLoading } = useGlobalContext();
     return (
-        <section>
-            <button onClick={() => handlePage('prev')}>prev</button>
-            <p>{page + 1} of {nbPages}</p>
-            <button onClick={() => handlePage('next')}>next</button>
+        <section className='buttons'>
+            <button className='btn' disabled={isLoading} onClick={() => handlePage('prev')}>prev</button>
+            <p>Page {page + 1} of {nbPages}</p>
+            <button className='btn' disabled={isLoading} onClick={() => handlePage('next')}>next</button>
         </section>
     );
 }

@@ -3,9 +3,12 @@ import { useGlobalContext } from '../context';
 function Search() {
     const { query, handleSearch } = useGlobalContext();
     return (
-        <section>
-            <form onSubmit={(e) => e.preventDefault()}>
+        <section className='search'>
+            <form className='form'
+                onSubmit={(e) => e.preventDefault()}
+            >
                 <input
+                    className='form-input'
                     type="search"
                     name="search"
                     value={query}

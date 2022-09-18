@@ -4,11 +4,11 @@ import Search from './components/Search';
 
 function App() {
     return (
-        <>
+        <main>
             <Search />
             <Buttons />
             <News />
-        </>
+        </main>
     );
 }
 

@@ -11,11 +11,11 @@ function News() {
     }
 
     return (
-        <div>
+        <sections className="news">
             {news.map((article) => (
                 <Article key={article.objectID} article={article} />
             ))}
-        </div>
+        </sections>
     );
 }
 
