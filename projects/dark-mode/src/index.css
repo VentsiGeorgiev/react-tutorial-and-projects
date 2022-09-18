@@ -1,11 +1,57 @@
+.dark-theme {
+    --clr-bg: #282c34;
+    --clr-font: #e7e6e6;
+    --clr-btn-bg: #61dafb;
+    --clr-btn-font: #16181d;
+    --clr-btn-border: #61dafb;
+}
+.light-theme {
+    --clr-bg: #ffffff;
+    --clr-font: #20232a;
+    --clr-btn-bg: #ffffff;
+    --clr-btn-font: #16181d;
+    --clr-btn-border: #16181d;
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
         "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transition: all 0.3s linear;
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--clr-bg);
+}
+
+.content {
+    width: 75%;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--clr-font);
+}
+p {
+    color: var(--clr-font);
+}
+
+button {
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    background-color: var(--clr-btn-bg);
+    border: 1px solid var(--clr-btn-border);
+    cursor: pointer;
 }

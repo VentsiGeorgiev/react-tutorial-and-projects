@@ -297,6 +297,24 @@
                 </a>
             </td>
             </tr>
+            <tr>
+            <td>
+                <a 
+                href="https://dark-mode-eae40e.netlify.app/"
+                target="_blank"
+                >
+                Dark Mode
+                </a>
+            </td>
+            <td>
+                <a 
+                href="https://github.com/VentsiGeorgiev/react-tutorial-and-projects/tree/main/projects/dark-mode"
+                target="_blank"
+                >
+                Link
+                </a>
+            </td>
+            </tr>
         </tr>
     </tbody>
 </table>
