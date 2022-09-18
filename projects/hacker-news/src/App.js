@@ -1,6 +1,8 @@
+import News from './components/News';
+
 function App() {
     return (
-        <h1>Hacker News</h1>
+        <News />
     );
 }
 
