@@ -1,4 +1,5 @@
 import {
+    HANDLE_PAGE,
     SET_LOADING,
     SET_NEWS,
     SET_QUERY,
@@ -16,9 +17,30 @@ function reducer(state, action) {
             return {
                 ...state,
                 isLoading: false,
-                news: action.payload,
+                news: action.payload.news,
+                page: action.payload.page,
+                nbPages: action.payload.nbPages,
             };
         case SET_QUERY:
+            return {
+                ...state,
+                query: action.payload
+            };
+        case HANDLE_PAGE:
+            if (action.payload === 'next') {
+                let nextPage = state.page++;
+                if (nextPage > state.nbPages - 1) {
+                    nextPage = 0;
+                }
+                return { ...state, page: nextPage };
+            }
+            if (action.payload === 'prev') {
+                let prevPage = state.page--;
+                if (prevPage < 0) {
+                    prevPage = state.nbPages - 1;
+                }
+                return { ...state, page: prevPage };
+            }
             return {
                 ...state,
                 query: action.payload

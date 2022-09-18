@@ -4,6 +4,7 @@ import {
     SET_LOADING,
     SET_NEWS,
     SET_QUERY,
+    HANDLE_PAGE,
 } from './actions';
 
 const AppContext = createContext();
@@ -13,7 +14,9 @@ const API_ENDPOINT = 'https://hn.algolia.com/api/v1/search?query=';
 const initialState = {
     isLoading: true,
     news: [],
-    query: 'react'
+    query: 'react',
+    page: 0,
+    nbPages: 0,
 };
 
 const AppProvider = ({ children }) => {
@@ -24,7 +27,14 @@ const AppProvider = ({ children }) => {
         try {
             const response = await fetch(url);
             const result = await response.json();
-            dispatch({ type: SET_NEWS, payload: result.hits });
+            dispatch({
+                type: SET_NEWS,
+                payload: {
+                    news: result.hits,
+                    page: result.page,
+                    nbPages: result.nbPages
+                }
+            });
         } catch (error) {
             console.log(error);
         }
@@ -35,14 +45,19 @@ const AppProvider = ({ children }) => {
         dispatch({ type: SET_QUERY, payload: query });
     };
 
+    const handlePage = (value) => {
+        dispatch({ type: HANDLE_PAGE, payload: value });
+    };
+
     useEffect(() => {
-        fetchData(`${API_ENDPOINT}${state.query}`);
-    }, [state.query]);
+        fetchData(`${API_ENDPOINT}${state.query}&page=${state.page}`);
+    }, [state.query, state.page]);
 
     return <AppContext.Provider
         value={{
             ...state,
             handleSearch,
+            handlePage,
         }}
     >
         {children}
