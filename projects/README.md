@@ -351,6 +351,24 @@
                 </a>
             </td>
             </tr>
+            <tr>
+            <td>
+                <a 
+                href="https://quiz-14d501.netlify.app/"
+                target="_blank"
+                >
+                Quiz
+                </a>
+            </td>
+            <td>
+                <a 
+                href="https://github.com/VentsiGeorgiev/react-tutorial-and-projects/tree/main/projects/quiz"
+                target="_blank"
+                >
+                Link
+                </a>
+            </td>
+            </tr>
         </tr>
     </tbody>
 </table>
