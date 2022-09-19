@@ -9,6 +9,7 @@ const AppProvider = ({ children }) => {
     const [isLoading, setIsLoading] = useState(false);
     const [isStarted, setIsStarted] = useState(false);
     const [questions, setQuestions] = useState([]);
+    const [isCompleted, setIsCompleted] = useState(false);
     const [page, setPage] = useState(0);
     const [correct, setCorrect] = useState(0);
     const [formData, setFormData] = useState({
@@ -28,7 +29,6 @@ const AppProvider = ({ children }) => {
             setIsLoading(true);
             const response = await fetch(`${API_URL}amount=${quesCount}&category=${categoryConfig[cat]}&difficulty=${diff}&type=multiple`);
             const result = await response.json();
-            // console.log(result.results);
             setQuestions(result.results);
             setIsLoading(false);
         } catch (error) {
@@ -59,7 +59,7 @@ const AppProvider = ({ children }) => {
         setPage((prevState) => {
             const nextPage = prevState + 1;
             if (nextPage > questions.length - 1) {
-                console.log('Last Page');
+                setIsCompleted(true);
                 return 0;
             } else {
                 return nextPage;
@@ -82,6 +82,7 @@ const AppProvider = ({ children }) => {
         isStarted,
         page,
         correct,
+        isCompleted,
         handleChange,
         handleSubmit,
         nextPage,

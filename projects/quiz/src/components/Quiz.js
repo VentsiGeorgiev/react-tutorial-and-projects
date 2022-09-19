@@ -1,10 +1,11 @@
 import { useGlobalContext } from '../context';
+import Spinner from './Spinner';
 
 function Quiz() {
-    const { isLoading, isStarted, questions, page, nextPage, checkAnswer, correct } = useGlobalContext();
+    const { isLoading, isStarted, questions, page, nextPage, checkAnswer, correct, isCompleted } = useGlobalContext();
 
     if (isLoading) {
-        return <h3>Loading..</h3>;
+        return <Spinner />;
     }
 
     if (isStarted) {
@@ -22,16 +23,26 @@ function Quiz() {
             <div className="section quiz-section">
                 {isStarted && questions &&
                     <>
-                        <h2 className='question-title'>{question}</h2>
-                        <div className='answers'>
-                            <p className='correct-answers'>Correct Answers:  {correct}/{page}</p>
-                            {suffledAnswers.map((answer, index) => (
-                                <button onClick={() => checkAnswer(correct_answer === answer)} className='btn-answer' key={index}>{answer}</button>
-                            ))}
-                        </div>
-                        <div className='center'>
-                            <button className='btn-next' onClick={nextPage}>Next</button>
-                        </div>
+                        {isCompleted === false ?
+                            (<>
+                                <h2 className='question-title'>{question}</h2>
+                                <div className='answers'>
+                                    <p className='correct-answers'>Correct Answers:  {correct}/{page}</p>
+                                    {suffledAnswers.map((answer, index) => (
+                                        <button onClick={() => checkAnswer(correct_answer === answer)} className='btn-answer' key={index}>{answer}</button>
+                                    ))}
+                                </div>
+                                <div className='center'>
+                                    <button className='btn-next' onClick={nextPage}>Next</button>
+                                </div>
+                            </>)
+                            :
+                            (<div className='final-score'>
+                                <h2>Final Score</h2>
+                                <h3> You answered {((correct / questions.length) * 100).toFixed(0)}% of
+                                    questions correctly</h3>
+                            </div>)}
+
                     </>
                 }
 
