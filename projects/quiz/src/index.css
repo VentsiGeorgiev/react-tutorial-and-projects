@@ -12,6 +12,7 @@ GLOBAL
     --clr-font: #7f87b2;
     --clr-green: #95dab6;
     --clr-dark: #28282b;
+    --clr-blue: #83b2d0;
 }
 
 * {
@@ -81,4 +82,68 @@ SETUP FORM
     border: none;
     cursor: pointer;
     font-weight: 700;
+}
+
+/* 
+===========
+ANSWERS
+===========
+*/
+.quiz-section {
+    margin-top: 2rem;
+    background-color: var(--clr-white);
+    padding: 0.75rem;
+}
+
+.question-title {
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--clr-dark);
+    margin-bottom: 1rem;
+}
+
+.answers {
+    width: 80%;
+    margin: 0 auto 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1rem;
+}
+
+.answers .btn-answer {
+    font-size: 1.1rem;
+    padding: 8px;
+    background-color: var(--clr-white);
+    border: 1px solid var(--clr-font);
+    cursor: pointer;
+}
+
+.btn-answer:hover {
+    background-color: var(--clr-blue);
+    color: var(--clr-white);
+    border: 1px solid var(--clr-white);
+}
+
+.center {
+    display: block;
+    text-align: center;
+}
+
+.btn-next {
+    border: 1px solid var(--clr-dark);
+    background-color: var(--clr-dark);
+    color: var(--clr-white);
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.btn-next:hover {
+    color: var(--clr-dark);
+    background-color: var(--clr-white);
+}
+
+.correct-answers {
+    text-align: right;
+    color: var(--clr-dark);
 }
