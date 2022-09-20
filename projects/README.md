@@ -85,7 +85,7 @@
         <tr>
             <td>
                 <a 
-                href="https://navbar-ae81ef.netlify.app/"
+                href="https://navbar-917f75.netlify.app/"
                 target="_blank"
                 >
                 Navbar

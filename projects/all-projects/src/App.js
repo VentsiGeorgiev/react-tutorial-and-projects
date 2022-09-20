@@ -1,6 +1,10 @@
+import Projects from './components/Projects';
+
 function App() {
     return (
-        <h1>All Projects</h1>
+        <>
+            <Projects />
+        </>
     );
 }
 

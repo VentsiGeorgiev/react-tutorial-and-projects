@@ -1,3 +1,3 @@
 # Cart
 
-## Live Demo [Food menu](https://cart-6a0c40.netlify.app/)
+## Live Demo [Cart](https://cart-6a0c40.netlify.app/)

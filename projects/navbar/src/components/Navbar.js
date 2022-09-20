@@ -10,7 +10,7 @@ function Navbar() {
                 <section className="header-wrapper">
                     {/* logo */}
                     <div>
-                        <h1>logo</h1>
+                        <h1 className='logo'>VG</h1>
                     </div>
                     {/* header - links */}
                     <nav className="header-links">
