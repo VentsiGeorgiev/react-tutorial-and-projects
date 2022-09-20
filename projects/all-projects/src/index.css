@@ -42,6 +42,8 @@ li {
 }
 
 .all-projects {
+    width: 100%;
+    max-width: 1920px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -95,6 +97,21 @@ li {
     color: var(--clr-white);
 }
 
+.react-projects {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.react-projects button {
+    margin-left: 10px;
+    width: 25%;
+    text-transform: capitalize;
+}
+
+.react-projects h1 {
+    margin-bottom: 1rem;
+}
+
 @media screen and (min-width: 768px) {
     .all-projects {
         grid-template-columns: 1fr 1fr;
@@ -104,15 +121,21 @@ li {
         padding: 2rem;
     }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
     .all-projects {
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .react-projects button {
+        width: 20%;
+    }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1600px) {
     .all-projects {
         grid-template-columns: repeat(4, 1fr);
         width: 80%;
         gap: 2.5rem;
+    }
+    .react-projects button {
+        width: 10%;
     }
 }

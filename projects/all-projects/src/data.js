@@ -1,4 +1,4 @@
-export const allProjects = [
+export const data = [
     {
         id: 1,
         name: 'Birthday Reminder',
@@ -147,7 +147,7 @@ export const allProjects = [
         category: 'advanced',
     },
     {
-        id: 18,
+        id: 19,
         name: 'Hacker News',
         demoLink: 'https://hacker-news-6e7649.netlify.app/',
         repoLink: 'https://github.com/VentsiGeorgiev/react-tutorial-and-projects/tree/main/projects/hacker-news',
@@ -155,7 +155,7 @@ export const allProjects = [
         category: 'advanced',
     },
     {
-        id: 19,
+        id: 20,
         name: 'Quiz',
         demoLink: 'https://quiz-14d501.netlify.app/',
         repoLink: 'https://github.com/VentsiGeorgiev/react-tutorial-and-projects/tree/main/projects/quiz',
