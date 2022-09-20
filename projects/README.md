@@ -1,6 +1,6 @@
 # Projects
 
-## All Projects
+## Browse All Projects [Here](https://all-react-projects-ef7ffb.netlify.app/)
 
 <table>
     <thead>
